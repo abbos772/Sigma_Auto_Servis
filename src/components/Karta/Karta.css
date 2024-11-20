@@ -1,0 +1,136 @@
+.karta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 100px;
+  line-height: 1.5;
+  flex-direction: column;
+}
+.karta_title h4 {
+  font-size: 16px;
+  color: #b81324;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+}
+.karta_title h1 {
+  font-size: 40px;
+  color: #0b2154;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 550;
+}
+.real_karta {
+  width: 95%;
+}
+.real_title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.realbox {
+  width: 100%;
+  background: #f2f2f2;
+  max-width: 624px;
+  height: 104px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 25px;
+}
+.realbox h1 {
+  font-size: 20px;
+  color: #0b2154;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.email svg {
+  color: red;
+}
+.email p {
+  font-size: 16px;
+  font-family: "Ubuntu";
+  font-weight: lighter;
+  color: #596277;
+}
+.karta_uzb {
+  padding-top: 20px;
+}
+
+@media (max-width: 750px) {
+  .karta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 100px;
+    line-height: 1.5;
+    flex-direction: column;
+  }
+  .karta_title h4 {
+    font-size: 15px;
+    color: #b81324;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: lighter;
+  }
+  .karta_title h1 {
+    font-size: 26px;
+    color: #0b2154;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 550;
+  }
+  .real_karta {
+    width: 95%;
+  }
+  .real_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .realbox {
+    width: 100%;
+    background: #f2f2f2;
+    max-width: 624px;
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+  }
+  .realbox h1 {
+    font-size: 16px;
+    color: #0b2154;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .email svg {
+    color: red;
+  }
+  .email p {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    color: #596277;
+  }
+  .karta_uzb {
+    padding-top: 20px;
+  }
+}

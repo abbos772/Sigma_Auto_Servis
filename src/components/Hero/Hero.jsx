@@ -9,7 +9,6 @@ import carousel from "./imgs/carousel-1.png";
 import carousel2 from "./imgs/carousel-2.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-
 const Hero = () => {
   return (
     <div style={{ marginTop: "-1.52px" }}>

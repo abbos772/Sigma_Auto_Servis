@@ -1,0 +1,342 @@
+.servic {
+  display: flex;
+  gap: 10px;
+  padding-top: 80px;
+  justify-content: center;
+}
+.servic_text {
+  margin: 40px 0px 0px;
+  max-width: 660px;
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.servic_img img {
+  width: 100%;
+  max-width: 647px;
+}
+.servic_text h5 {
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  color: #d81324;
+  font-weight: bold;
+}
+.servic_text h1 {
+  font-size: 39px;
+  font-family: "Barlow", sans-serif;
+  color: #0b2154;
+  font-weight: bold;
+}
+.servic_text p {
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  color: #596277;
+  font-weight: normal;
+}
+.servic__boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.servic__box {
+  display: flex;
+  gap: 15px;
+}
+.servic_cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  background-color: #f2f2f2;
+  height: 45px;
+}
+.servic_cart p {
+  color: #596277;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+}
+.cartNo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cartNo h3 {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  color: #0b2154;
+}
+.cartNo p {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  color: #596277;
+}
+.btn_zvonok {
+  width: 226px;
+  height: 58px;
+  cursor: pointer;
+  border: 0;
+  background: #d81324;
+  color: white;
+  font-size: 16px;
+}
+@media (max-width: 990px) {
+  .servic {
+    display: flex;
+    gap: 10px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .servic_text {
+    margin: 40px 0px 0px;
+    max-width: 660px;
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .servic_img img {
+    width: 100%;
+    max-width: 647px;
+  }
+  .servic_text h5 {
+    font-size: 16px;
+    font-family: "Barlow", sans-serif;
+    color: #d81324;
+    font-weight: bold;
+  }
+  .servic_text h1 {
+    font-size: 39px;
+    font-family: "Barlow", sans-serif;
+    color: #0b2154;
+    font-weight: bold;
+  }
+  .servic_text p {
+    font-size: 16px;
+    font-family: "Barlow", sans-serif;
+    color: #596277;
+    font-weight: normal;
+  }
+  .servic__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .servic__box {
+    display: flex;
+    gap: 15px;
+  }
+  .servic_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    background-color: #f2f2f2;
+    height: 45px;
+  }
+  .servic_cart p {
+    color: #596277;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+  }
+  .cartNo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cartNo h3 {
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    color: #0b2154;
+  }
+  .cartNo p {
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    color: #596277;
+  }
+  .btn_zvonok {
+    width: 226px;
+    height: 58px;
+    cursor: pointer;
+    border: 0;
+    background: #d81324;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .servic {
+    display: flex;
+    gap: 10px;
+    padding: 5px !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .servic_text {
+    margin: 40px 0px 0px;
+    max-width: 660px;
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .servic_img img {
+    width: 100%;
+    max-width: 647px;
+  }
+  .servic_text h5 {
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    color: #d81324;
+    font-weight: bold;
+  }
+  .servic_text h1 {
+    font-size: 28px;
+    font-family: "Barlow", sans-serif;
+    color: #0b2154;
+    font-weight: bold;
+  }
+  .servic_text p {
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    color: #596277;
+    font-weight: normal;
+  }
+  .servic__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .servic__box {
+    display: flex;
+    gap: 15px;
+  }
+  .servic_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    background-color: #f2f2f2;
+    height: 45px;
+  }
+  .servic_cart p {
+    color: #596277;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+  }
+  .cartNo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cartNo h3 {
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    color: #0b2154;
+  }
+  .cartNo p {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    color: #596277;
+  }
+  .btn_zvonok {
+    width: 226px;
+    height: 58px;
+    cursor: pointer;
+    border: 0;
+    background: #d81324;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .servic {
+    display: flex;
+    gap: 10px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .servic_text {
+    margin: 40px 0px 0px;
+    max-width: 660px;
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .servic_img img {
+    width: 100%;
+    max-width: 647px;
+  }
+  .servic_text h5 {
+    font-size: 14px;
+    font-family: "Barlow", sans-serif;
+    color: #d81324;
+    font-weight: bold;
+  }
+  .servic_text h1 {
+    font-size: 26px;
+    font-family: "Barlow", sans-serif;
+    color: #0b2154;
+    font-weight: bold;
+  }
+  .servic_text p {
+    font-size: 14px;
+    font-family: "Barlow", sans-serif;
+    color: #596277;
+    font-weight: normal;
+  }
+  .servic__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .servic__box {
+    display: flex;
+    gap: 15px;
+  }
+  .servic_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    background-color: #f2f2f2;
+    height: 45px;
+  }
+  .servic_cart p {
+    color: #596277;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+  }
+  .cartNo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cartNo h3 {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    color: #0b2154;
+  }
+  .cartNo p {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    color: #596277;
+  }
+  .btn_zvonok {
+    width: 226px;
+    height: 58px;
+    cursor: pointer;
+    border: 0;
+    background: #d81324;
+    color: white;
+    font-size: 14px;
+  }
+}

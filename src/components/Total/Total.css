@@ -1,0 +1,77 @@
+.total {
+  background-image: url(../Hero/imgs/malibu.jpg);
+  background-position-y: 60%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  margin-top: 100px;
+}
+.total_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.total_card svg {
+  font-size: 32px;
+  color: white;
+}
+.total_card h1 {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: white;
+}
+.total_card h3 {
+  font-size: 16px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.total_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 50px;
+}
+@media (max-width: 600px) {
+  .total {
+    background-image: url(../Hero/imgs/malibu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    margin-top: 100px;
+  }
+  .total_flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .total_card svg {
+    font-size: 32px;
+    color: white;
+  }
+  .total_card h1 {
+    font-size: 32px;
+    font-family: sans-serif;
+    color: white;
+  }
+  .total_card h3 {
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+  .total_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+}
