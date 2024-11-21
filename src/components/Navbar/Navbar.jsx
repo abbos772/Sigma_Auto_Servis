@@ -32,16 +32,16 @@ const Navbar = () => {
         </div>
         <div className={`nav_box ${toggle ? "show" : ""}`}>
           <div className="Navbar__nav">
-            <a className="nav_title" href="#">
+            <a className="nav_title" href="#home">
               Главная
             </a>
-            <a className="nav_title" href="#">
+            <a className="nav_title" href="#About">
               О Нас
             </a>
-            <a className="nav_title" href="#">
+            <a className="nav_title" href="#services">
               Услуги
             </a>
-            <a className="nav_title" href="#">
+            <a className="nav_title" href="#contacts">
               Контакты
             </a>
             <a className="nav_title" href="#">
