@@ -12,8 +12,7 @@
   "autoVulcanization": "Auto Vulcanization",
   "carUnlocking": "Car Unlocking",
   "mobileCarMaster": "Mobile Car Master",
-  "oilChange": "Oil Change",
-  "tireChange": "Tire Change",
+
   "tinting": "Tinting",
   "engineSpecialist": "Engine Specialist",
   "repairCars": "// Car Repairs //",
@@ -43,14 +42,7 @@
     "title": "Engine Service",
     "text": "We provide full engine maintenance for maximum vehicle performance."
   },
-  "tireChange": {
-    "title": "Tire Change",
-    "text": "Quick and quality tire change for your safety on the road."
-  },
-  "oilChange": {
-    "title": "Oil Change",
-    "text": "Regular oil changes for your vehicle’s reliable performance."
-  },
+
   "callNow": "Call Now",
   "qualityService": "Quality Service",
   "experiencedTechnicians": "Experienced Technicians",

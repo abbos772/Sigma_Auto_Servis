@@ -60,7 +60,7 @@ export default function Tg() {
 
   return (
     <div className="countainer">
-      <div>
+      <div id="contact">
         <h1 className="h11">{t("questions")}</h1>
         <form onSubmit={setMessage}>
           <div className="flex_inp">

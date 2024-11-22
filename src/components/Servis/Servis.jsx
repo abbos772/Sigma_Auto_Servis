@@ -8,7 +8,7 @@ const Servis = () => {
 
   return (
     <div className="countainer">
-      <div className="servic">
+      <div className="servic" id="About">
         <div className="servic_img">
           <img src={servic} alt="" />
         </div>

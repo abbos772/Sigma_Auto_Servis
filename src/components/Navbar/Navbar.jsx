@@ -27,20 +27,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`Navbar ${scrolled ? "scrolled" : ""}`}>
+    <div id="/" className={`Navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav_flex">
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
         <div className={`nav_box ${toggle ? "show" : ""}`}>
           <div className="Navbar__nav">
-            <a className="nav_title" href="#home">
+            <a className="nav_title" href="#">
               {t("home")}
             </a>
             <a className="nav_title" href="#About">
               {t("about")}
             </a>
-            <a className="nav_title" href="#services">
+            <a className="nav_title" href="#Servics">
               {t("services")}
             </a>
             <a className="nav_title" href="#contacts">
@@ -56,9 +56,11 @@ const Navbar = () => {
                 <option value="ru">RU</option>
               </select>
             </div>
-            <button className="Nav__btn">
-              {t("callMaster")} <FaArrowRight />
-            </button>
+            <a href="#contact">
+              <button className="Nav__btn">
+                {t("callMaster")} <FaArrowRight />
+              </button>
+            </a>
           </div>
         </div>
         <button className="menu" onClick={() => setToggle(!toggle)}>

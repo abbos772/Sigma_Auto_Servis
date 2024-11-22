@@ -43,14 +43,6 @@
     "title": "Engine Service",
     "text": "We provide full engine maintenance for maximum vehicle performance."
   },
-  "tireChange": {
-    "title": "Tire Change",
-    "text": "Quick and quality tire change for your safety on the road."
-  },
-  "oilChange": {
-    "title": "Oil Change",
-    "text": "Regular oil changes for your vehicle’s reliable performance."
-  },
   "callNow": "Call Now",
   "qualityService": "Quality Service",
   "experiencedTechnicians": "Experienced Technicians",
@@ -69,11 +61,10 @@
   "phone_number": "+99893 772 09 30",
   "address": "Manzil",
   "address_detail": "Yakkasaray ko'chasi, Toshkent, O'zbekiston. Belgilash: Navruz to'y restorani qarshisida",
-  "phone_number": "+998 93 772 09 30",
   "working_hours": "Ish vaqti",
   "working_days": "Dushanba - Yakshanba:",
   "hours": "24/7",
-  "services": "Xizmatlar",
+
   "service_list": [
     "Diagnostika",
     "Dvigatel Xizmati",

@@ -41,7 +41,7 @@ const YourComponent = () => {
   };
 
   return (
-    <div className="your-component countainer">
+    <div className="your-component countainer" id="Servics">
       <div className="button-section">
         <button
           className={`btn1 ${

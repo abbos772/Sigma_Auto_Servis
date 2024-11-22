@@ -8,7 +8,7 @@ const Karta = () => {
 
   return (
     <div className="countainer">
-      <div className="karta">
+      <div className="karta" id="contacts">
         <div className="karta_title">
           <h4>// {t("contact_title")}</h4> {/* Translated title */}
           <h1>{t("contact_title")}</h1> {/* Translated title */}

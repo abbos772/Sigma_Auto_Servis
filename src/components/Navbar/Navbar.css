@@ -67,6 +67,9 @@
 .nav_title:hover {
   color: #d81324;
 }
+a {
+  text-decoration: none;
+}
 .Nav__btn {
   font-family: "Ubuntu", sans-serif;
   height: 75px;
