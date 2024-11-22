@@ -46,8 +46,8 @@
 
 .carousel__img img {
   width: 100%;
-  max-width: 500px;
-  max-height: 370px;
+  max-width: 400px !important;
+  max-height: 300px;
 }
 
 .carousel__img {
@@ -68,7 +68,7 @@
 .carousel__img.animate__zoomIn {
   width: 100%;
   max-width: 400px;
-  height: 370px;
+  height: 300px;
 }
 .carousel__text {
   position: relative;
