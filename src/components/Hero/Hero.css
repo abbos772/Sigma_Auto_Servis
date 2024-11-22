@@ -63,9 +63,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 290px;
-  gap: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
+  gap: 10px;
 }
 .carousel__img.animate__zoomIn {
   width: 100%;
