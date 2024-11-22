@@ -10,3 +10,8 @@
 html {
   scroll-behavior: smooth;
 }
+.countainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

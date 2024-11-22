@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
@@ -10,24 +10,33 @@ import Karta from "./components/Karta/Karta";
 import Footer from "./components/footer/Footer";
 import Tg from "./components/Telegram/Tg";
 import Loading from "./components/Loading/Loading";
+import "./i18n";
+
 function App() {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <>
-      {loading ? <Loading /> : <div></div>}
-      <Navbar />
-      <Hero />
-      <About />
-      <Servis />
-      <Total />
-      <Services />
-      <Tg />
-      <Karta />
-      <Footer />
+      {loading ? (
+        <Loading />
+      ) : (
+        <div>
+          <Navbar />
+          <Hero />
+          <About />
+          <Servis />
+          <Total />
+          <Services />
+          <Tg />
+          <Karta />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }

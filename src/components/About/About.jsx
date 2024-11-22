@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./About.css";
 import bir from "./img/bir.png";
 import ikki from "./img/ikki.png";
@@ -7,7 +8,10 @@ import besh from "./img/besh.png";
 import olti from "./img/olti.png";
 import sokkis from "./img/sekkis.png";
 import toqqis from "./img/toqqis.png";
+
 const About = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -30,49 +34,49 @@ const About = () => {
     <div className="countainer">
       <div className="about">
         <div className="about_text">
-          <p>Наши Услуги</p>
-          <h1>Ознакомьтесь С Нашими Услугами</h1>
+          <p>{t("ourServices")}</p>
+          <h1>{t("exploreOurServices")}</h1>
         </div>
         <div className="about_carts">
           <div className="about__cart">
             <img src={bir} alt="" />
-            <h3>Авто-электрик</h3>
+            <h3>{t("autoElectrician")}</h3>
           </div>
           <div className="about__cart">
             <img src={ikki} alt="" />
-            <h3>Авто-механик</h3>
+            <h3>{t("autoMechanic")}</h3>
           </div>
           <div className="about__cart">
             <img src={uch} alt="" />
-            <h3>Ремонт Авто на Выезд</h3>
+            <h3>{t("mobileCarRepair")}</h3>
           </div>
           <div className="about__cart">
             <img src={ikki} alt="" />
-            <h3>Авто Вулканизация</h3>
+            <h3>{t("autoVulcanization")}</h3>
           </div>
           <div className="about__cart">
             <img src={besh} alt="" />
-            <h3>Вскрытия Автомобиля</h3>
+            <h3>{t("carUnlocking")}</h3>
           </div>
           <div className="about__cart">
             <img src={olti} alt="" />
-            <h3>Выезд Автомастер</h3>
+            <h3>{t("mobileCarMaster")}</h3>
           </div>
           <div className="about__cart">
             <img src={bir} alt="" />
-            <h3>Замена Авто масла</h3>
+            <h3>{t("oilChange")}</h3>
           </div>
           <div className="about__cart">
             <img src={sokkis} alt="" />
-            <h3>Замена шин</h3>
+            <h3>{t("tireChange")}</h3>
           </div>
           <div className="about__cart">
             <img src={toqqis} alt="" />
-            <h3>Тонировка</h3>
+            <h3>{t("tinting")}</h3>
           </div>
           <div className="about__cart">
             <img src={toqqis} alt="" />
-            <h3>Моторист</h3>
+            <h3>{t("engineSpecialist")}</h3>
           </div>
         </div>
       </div>

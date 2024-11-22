@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 import logo from "./imgs/logo.png";
 import { IoMenuOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const changeLanguage = (lang) => {
+    console.log("Selected Language:", lang);
+    i18n.changeLanguage(lang);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -33,22 +35,29 @@ const Navbar = () => {
         <div className={`nav_box ${toggle ? "show" : ""}`}>
           <div className="Navbar__nav">
             <a className="nav_title" href="#home">
-              Главная
+              {t("home")}
             </a>
             <a className="nav_title" href="#About">
-              О Нас
+              {t("about")}
             </a>
             <a className="nav_title" href="#services">
-              Услуги
+              {t("services")}
             </a>
             <a className="nav_title" href="#contacts">
-              Контакты
+              {t("contacts")}
             </a>
-            <a className="nav_title" href="#">
-              +998 93 772 09 30
-            </a>
+            <div className="language-switcher">
+              <select
+                onChange={(e) => changeLanguage(e.target.value)}
+                defaultValue={i18n.language}
+              >
+                <option value="en">EN</option>
+                <option value="uz">UZ</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
             <button className="Nav__btn">
-              ВЫЗВАТЬ МАСТЕРА <FaArrowRight />
+              {t("callMaster")} <FaArrowRight />
             </button>
           </div>
         </div>

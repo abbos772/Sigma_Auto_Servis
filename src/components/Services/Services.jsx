@@ -1,40 +1,41 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Services.css";
 import Services from "./img/service-2.jpg";
 import diagnostics from "./img/service-1.jpg";
 import tireChange from "./img/service-3.jpg";
 import oilChange from "./img/service-4.jpg";
-import { FaCarSide } from "react-icons/fa";
-import { FaCar } from "react-icons/fa";
-import { FaCheck } from "react-icons/fa6";
+import { FaCarSide, FaCar, FaCheck, FaOilCan } from "react-icons/fa";
 import { PiTireDuotone } from "react-icons/pi";
-import { FaOilCan } from "react-icons/fa";
+
 const YourComponent = () => {
+  const { t } = useTranslation();
+
   const [activeContent, setActiveContent] = useState({
-    title: "Диагностика",
-    text: "Наши специалисты готовы предложить вам диагностику автомобиля, чтобы убедиться в его исправности.",
+    title: t("diagnostics.title"),
+    text: t("diagnostics.text"),
     image: diagnostics,
   });
 
   const contents = {
     diagnostics: {
-      title: "Диагностика",
-      text: "Мы предоставляем высококачественные услуги по диагностике вашего автомобиля, используя самые современные технологии и оборудование.",
+      title: t("diagnostics.title"),
+      text: t("diagnostics.text"),
       image: diagnostics,
     },
     engineService: {
-      title: "Обслуживание Двигателя",
-      text: "Мы предлагаем полное обслуживание двигателя для максимальной производительности вашего автомобиля.",
+      title: t("engineService.title"),
+      text: t("engineService.text"),
       image: Services,
     },
     tireChange: {
-      title: "Замена Шин",
-      text: "Быстрая и качественная замена шин для вашей безопасности на дороге.",
+      title: t("tireChange.title"),
+      text: t("tireChange.text"),
       image: tireChange,
     },
     oilChange: {
-      title: "Замена Масла",
-      text: "Регулярная замена масла для надежной работы вашего автомобиля.",
+      title: t("oilChange.title"),
+      text: t("oilChange.text"),
       image: oilChange,
     },
   };
@@ -44,39 +45,39 @@ const YourComponent = () => {
       <div className="button-section">
         <button
           className={`btn1 ${
-            activeContent.title === "Диагностика" ? "active" : ""
+            activeContent.title === t("diagnostics.title") ? "active" : ""
           }`}
           onClick={() => setActiveContent(contents.diagnostics)}
         >
           <FaCarSide />
-          Диагностика
+          {t("diagnostics.title")}
         </button>
         <button
           className={`btn1 ${
-            activeContent.title === "Обслуживание Двигателя" ? "active" : ""
+            activeContent.title === t("engineService.title") ? "active" : ""
           }`}
           onClick={() => setActiveContent(contents.engineService)}
         >
           <FaCar />
-          Обслуживание Двигателя
+          {t("engineService.title")}
         </button>
         <button
           className={`btn1 ${
-            activeContent.title === "Замена Шин" ? "active" : ""
+            activeContent.title === t("tireChange.title") ? "active" : ""
           }`}
           onClick={() => setActiveContent(contents.tireChange)}
         >
           <PiTireDuotone />
-          Замена Шин
+          {t("tireChange.title")}
         </button>
         <button
           className={`btn1 ${
-            activeContent.title === "Замена Масла" ? "active" : ""
+            activeContent.title === t("oilChange.title") ? "active" : ""
           }`}
           onClick={() => setActiveContent(contents.oilChange)}
         >
           <FaOilCan />
-          Замена Масла
+          {t("oilChange.title")}
         </button>
       </div>
 
@@ -89,17 +90,17 @@ const YourComponent = () => {
           <p>{activeContent.text}</p>
           <div className="texta">
             <FaCheck />
-            <p>Качественное Обслуживание</p>
+            <p>{t("qualityService")}</p>
           </div>
           <div className="texta">
             <FaCheck />
-            <p>Опытные Специалисты</p>
+            <p>{t("experiencedTechnicians")}</p>
           </div>
           <div className="texta">
             <FaCheck />
-            <p>Современное Оборудование</p>
+            <p>{t("modernEquipment")}</p>
           </div>
-          <button className="btn0">ПОЗВОНИТЬ</button>
+          <button className="btn0">{t("callNow")}</button>
         </div>
       </div>
     </div>

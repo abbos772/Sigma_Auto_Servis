@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,8 +9,11 @@ import "./Hero.css";
 import carousel from "./imgs/carousel-1.png";
 import carousel2 from "./imgs/carousel-2.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
+
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div style={{ marginTop: "-1.52px" }}>
       <Swiper
@@ -29,12 +33,12 @@ const Hero = () => {
             <div className="countainer">
               <div className="carousel">
                 <div className="carousel__text">
-                  <p className="">// Ремонт Автомобилей //</p>
+                  <p>{t("repairCars")}</p>
                   <h1 className="custom-fadeInDown">
-                    Ремонт автомобилея в рассрочку
+                    {t("repairInstallment")}
                   </h1>
                   <button className="custom-fadeInDown">
-                    <h4>Узнать больше </h4> <FaArrowRightLong />
+                    <h4>{t("learnMore")}</h4> <FaArrowRightLong />
                   </button>
                 </div>
                 <div className="carousel__img animate__animated animate__zoomIn">
@@ -49,12 +53,10 @@ const Hero = () => {
             <div className="countainer__carousel">
               <div className="carousel">
                 <div className="carousel__text">
-                  <p className="custom-fadeInDown">// Ремонт Автомобилей //</p>
-                  <h1 className="custom-fadeInDown">
-                    Автозапчасти лучшего качество
-                  </h1>
+                  <p>{t("repairCars")}</p>
+                  <h1 className="custom-fadeInDown">{t("bestQualityParts")}</h1>
                   <button>
-                    <h4>Узнать больше</h4> <FaArrowRightLong />
+                    <h4>{t("learnMore")}</h4> <FaArrowRightLong />
                   </button>
                 </div>
                 <div className="carousel__img animate__animated animate__zoomIn">
@@ -69,10 +71,12 @@ const Hero = () => {
             <div className="countainer__carousel">
               <div className="carousel">
                 <div className="carousel__text">
-                  <p className="custom-fadeInDown">// Ремонт Автомобилей //</p>
-                  <h1 className="custom-fadeInDown">Помощь на дороге</h1>
+                  <p>{t("repairCars")}</p>
+                  <h1 className="custom-fadeInDown">
+                    {t("roadsideAssistance")}
+                  </h1>
                   <button>
-                    <h4>Узнать больше</h4> <FaArrowRightLong />
+                    <h4>{t("learnMore")}</h4> <FaArrowRightLong />
                   </button>
                 </div>
                 <div className="carousel__img animate__animated animate__zoomIn">

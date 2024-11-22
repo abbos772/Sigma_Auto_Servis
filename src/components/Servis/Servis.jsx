@@ -1,7 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import servic from "./img/servic.png";
 import "./Servis.css";
+
 const Servis = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="countainer">
       <div className="servic">
@@ -9,24 +13,17 @@ const Servis = () => {
           <img src={servic} alt="" />
         </div>
         <div className="servic_text">
-          <h5>// О НАС //</h5>
-          <h1>Sigma Avtoservis - Лучшее Место Для Ухода За Вашим Авто</h1>
-          <p>
-            Мы предоставляем высококачественные услуги по ремонту автомобилей с
-            многолетним опытом и профессионализмом. Наша команда экспертов
-            готова помочь вам в любой ситуации.
-          </p>
+          <h5>{t("aboutUs")}</h5>
+          <h1>{t("sigmaService")}</h1>
+          <p>{t("serviceDescription")}</p>
           <div className="servic__boxes">
             <div className="servic__box">
               <div className="servic_cart">
                 <p>01</p>
               </div>
               <div className="cartNo">
-                <h3>Профессионалы и Эксперты</h3>
-                <p>
-                  Наши специалисты обладают высоким уровнем квалификации и
-                  профессионализма.
-                </p>
+                <h3>{t("professionalExperts")}</h3>
+                <p>{t("professionalDescription")}</p>
               </div>
             </div>
             <div className="servic__box">
@@ -34,10 +31,8 @@ const Servis = () => {
                 <p>02</p>
               </div>
               <div className="cartNo">
-                <h3>Качественный Сервисный Центр</h3>
-                <p>
-                  Мы гарантируем высокое качество обслуживания каждого клиента.
-                </p>
+                <h3>{t("qualityServiceCenter")}</h3>
+                <p>{t("qualityDescription")}</p>
               </div>
             </div>
             <div className="servic__box">
@@ -45,14 +40,11 @@ const Servis = () => {
                 <p>03</p>
               </div>
               <div className="cartNo">
-                <h3>Награжденные Работники</h3>
-                <p>
-                  Наши сотрудники удостоены многочисленных наград за свою
-                  работу.
-                </p>
+                <h3>{t("awardedEmployees")}</h3>
+                <p>{t("awardDescription")}</p>
               </div>
             </div>
-            <button className="btn_zvonok">ПОЗВОНИТЬ </button>
+            <button className="btn_zvonok">{t("callUs")}</button>
           </div>
         </div>
       </div>

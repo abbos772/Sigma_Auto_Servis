@@ -1,31 +1,35 @@
 import React from "react";
+import { useTranslation } from "react-i18next"; // Import the hook for translation
 import "./Footer.css";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 import { FaTelegram } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
+
 const Footer = () => {
+  const { t } = useTranslation(); // Initialize the hook for translations
+
   return (
     <div className="Footer">
       <div className="countainer">
         <div className="footer_flex">
           <div className="footerBox">
-            <h1>Адрес</h1>
+            <h1>{t("address")}</h1> {/* Translated address heading */}
             <div className="loc">
               <p>
                 <IoLocationSharp />
-                ул. Яккасарайская, г. Ташкент, Узбекистан. Ориентир: Напротив
-                свадебного ресторана Navruz
-              </p>
+                {t("address_detail")}
+              </p>{" "}
+              {/* Translated address details */}
             </div>
             <div className="tel">
               <FaPhone />
-              <h5>+998 93 772 09 30</h5>
+              <h5>{t("phone_number")}</h5> {/* Translated phone number */}
             </div>
             <div className="tel">
               <FaPhone />
-              <h5>+998 93 772 09 30</h5>
+              <h5>{t("phone_number")}</h5> {/* Translated phone number */}
             </div>
             <div className="set">
               <a
@@ -42,69 +46,33 @@ const Footer = () => {
           </div>
 
           <div className="footerBox">
-            <h1>Часы Работы</h1>
+            <h1>{t("working_hours")}</h1>{" "}
+            {/* Translated working hours heading */}
             <div className="loc">
-              <p>Понедельник - Воскресенье:</p>
+              <p>{t("working_days")}</p> {/* Translated working days */}
             </div>
-            <p>24/7</p>
+            <p>{t("hours")}</p> {/* Translated working hours */}
           </div>
 
           <div className="footerBox">
-            <h1>Услуги</h1>
+            <h1>{t("services")}</h1> {/* Translated services heading */}
             <div className="loc">
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Диагностика</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Обслуживание Двигателя</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Замена Шин</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Замена Масла</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Токарная услуга</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Тонировка</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Моторист</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Кастаправ</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Вакуумная Чистка</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Авто-Электрик</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Авто-Механик</p>
-              </div>
-              <div className="locsvg">
-                <FaChevronRight />
-                <p>Выезд Автоэлектрик Круглосуточный</p>
-              </div>
+              {/* Loop through services and display them */}
+              {t("service_list", { returnObjects: true }).map(
+                (service, index) => (
+                  <div key={index} className="locsvg">
+                    <FaChevronRight />
+                    <p>{service}</p>
+                  </div>
+                )
+              )}
             </div>
           </div>
+
           <div className="footerBox uf">
-            <h1>Контакты</h1>
-            <button>ВЫЗВАТЬ МАСТЕРА</button>
+            <h1>{t("contact")}</h1> {/* Translated contacts heading */}
+            <button>{t("call_master")}</button>{" "}
+            {/* Translated call master button */}
           </div>
         </div>
       </div>
