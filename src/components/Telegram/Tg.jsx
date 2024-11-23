@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next"; // Import the useTranslation hook
+import { useTranslation } from "react-i18next";
 import "./Tg.css";
 import axios from "axios";
 
@@ -11,9 +11,9 @@ export default function Tg() {
     problem: "",
   });
 
-  const [messageStatus, setMessageStatus] = useState(""); // To show success/error status
+  const [messageStatus, setMessageStatus] = useState("");
 
-  const { t } = useTranslation(); // useTranslation hook to get translations
+  const { t } = useTranslation();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -23,9 +23,8 @@ export default function Tg() {
   const setMessage = (event) => {
     event.preventDefault();
 
-    // Retrieve sensitive information from environment variables for security
-    const token = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
-    const chat_id = process.env.REACT_APP_CHAT_ID;
+    const token = "8067183480:AAFKCrO3LUj1a82nwf0on6R-5OUok77whTc";
+    const chat_id = "6068975139";
 
     if (!token || !chat_id) {
       console.error("Telegram Bot Token or Chat ID is missing.");
