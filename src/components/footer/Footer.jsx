@@ -53,27 +53,29 @@ const Footer = () => {
             </div>
             <p>{t("hours")}</p> {/* Translated working hours */}
           </div>
-
-          <div className="footerBox">
-            <h1>{t("services")}</h1> {/* Translated services heading */}
-            <div className="loc">
-              {/* Loop through services and display them */}
-              {t("service_list", { returnObjects: true }).map(
-                (service, index) => (
-                  <div key={index} className="locsvg">
-                    <FaChevronRight />
-                    <p>{service}</p>
-                  </div>
-                )
-              )}
+          <a href="#contact">
+            <div className="footerBox">
+              <h1>{t("services")}</h1> {/* Translated services heading */}
+              <div className="loc">
+                {/* Loop through services and display them */}
+                {t("service_list", { returnObjects: true }).map(
+                  (service, index) => (
+                    <div key={index} className="locsvg">
+                      <FaChevronRight />
+                      <p>{service}</p>
+                    </div>
+                  )
+                )}
+              </div>
             </div>
-          </div>
-
-          <div className="footerBox uf">
-            <h1>{t("contact")}</h1> {/* Translated contacts heading */}
-            <button>{t("call_master")}</button>{" "}
-            {/* Translated call master button */}
-          </div>
+          </a>
+          <a href="#contacts">
+            <div className="footerBox uf">
+              <h1>{t("contact")}</h1> {/* Translated contacts heading */}
+              <button className="aa">{t("call_master")}</button>{" "}
+              {/* Translated call master button */}
+            </div>
+          </a>
         </div>
       </div>
     </div>

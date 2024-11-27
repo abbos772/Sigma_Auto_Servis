@@ -48,7 +48,7 @@ export default function Tg() {
         parse_mode: "Markdown",
       })
       .then((res) => {
-        setMessageStatus(t("success"));
+        setMessageStatus(t("success", res));
         setFormData({ name: "", surname: "", phone: "", problem: "" });
       })
       .catch((error) => {

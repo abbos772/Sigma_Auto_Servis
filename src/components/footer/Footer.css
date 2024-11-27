@@ -16,7 +16,6 @@
 .footerBox {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
   width: 100%;
   max-width: 336px;
@@ -73,7 +72,7 @@
   color: white;
   cursor: pointer;
 }
-.footerBox button {
+.aa {
   max-width: 288px;
   height: 42px;
   color: white;
@@ -82,33 +81,6 @@
   background-color: #d81324;
   border: 0;
   cursor: pointer;
-}
-@media (max-width: 1000px) {
-  .Footer {
-    width: 100%;
-    height: 150% !important;
-    background-image: url(./img/carousel-bg-1.jpg);
-    background-position: center;
-    background-color: black;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.9);
-    background-blend-mode: darken;
-  }
-  .footer_flex {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 20px;
-    padding-top: 200px;
-  }
-  .footerBox {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 306px;
-    height: 300px;
-  }
 }
 @media (max-width: 1350px) {
   .Footer {
@@ -137,10 +109,40 @@
     height: 300px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .Footer {
     width: 100% !important;
-    height: 150vh !important;
+    height: 100% !important;
+    background-image: url(./img/carousel-bg-1.jpg);
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+  }
+  .footer_flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 200px;
+    padding-bottom: 250px;
+  }
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 306px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100% !important;
+    height: 120vh !important;
     background-image: url(./img/carousel-bg-1.jpg);
     background-position: center;
     background-color: black;
@@ -151,25 +153,31 @@
   .footer_flex {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
     padding-top: 100px;
   }
   .footerBox {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 40% !important;
-    max-width: 300px;
-    height: 250px;
+    width: 100%;
+
+    max-width: 200px;
+  }
+}
+@media (max-width: 662px) {
+  .uf {
+    padding-top: 300px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .Footer {
+    padding-bottom: 50px;
     width: 100% !important;
-    height: 200vh !important;
+    height: 170vh !important;
     background-image: url(./img/carousel-bg-1.jpg);
     background-position: center;
     background-color: black;
@@ -192,10 +200,5 @@
     width: 100% !important;
     max-width: 200px !important;
     height: 250px !important;
-  }
-}
-@media (max-width: 662px) {
-  .uf {
-    padding-top: 300px;
   }
 }
