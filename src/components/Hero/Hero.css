@@ -248,6 +248,9 @@
   }
 }
 @media (max-width: 500px) {
+  .carousel {
+    padding-top: 150px !important;
+  }
   .swiper-button-prev,
   .swiper-button-next {
     font-size: 10px !important;
