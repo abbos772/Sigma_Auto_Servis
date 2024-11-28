@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Tg.css";
 import axios from "axios";
 
@@ -10,8 +12,6 @@ export default function Tg() {
     phone: "",
     problem: "",
   });
-
-  const [messageStatus, setMessageStatus] = useState("");
 
   const { t } = useTranslation();
 
@@ -47,13 +47,13 @@ export default function Tg() {
         text: message,
         parse_mode: "Markdown",
       })
-      .then((res) => {
-        setMessageStatus(t("success", res));
+      .then(() => {
+        toast.success(t("success"));
         setFormData({ name: "", surname: "", phone: "", problem: "" });
       })
       .catch((error) => {
         console.error("Error sending message", error);
-        setMessageStatus(t("error"));
+        toast.error(t("error"));
       });
   };
 
@@ -100,16 +100,9 @@ export default function Tg() {
           </div>
           <button type="submit">{t("send")}</button>
         </form>
-
-        {/* Display message status */}
-        <div className="status-message">
-          {messageStatus === t("success") ? (
-            <p style={{ color: "green" }}>{messageStatus}</p>
-          ) : (
-            <p style={{ color: "red" }}>{messageStatus}</p>
-          )}
-        </div>
       </div>
+
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }
